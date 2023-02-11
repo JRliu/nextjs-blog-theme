@@ -23,6 +23,6 @@ const fn = async (req, res) => {
 
 export default fn
 
-export const config = {
-	type: 'experimental-background',
-}
+// export const config = {
+// 	type: 'experimental-background',
+// }
