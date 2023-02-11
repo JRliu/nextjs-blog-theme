@@ -4,7 +4,8 @@ exports.handler = async function (event, context) {
 
 	return {
 		statusCode: 200,
-		headers,
+		identity, 
+		user,
 		body: JSON.stringify({
 			test: 'hello world'
 		})
