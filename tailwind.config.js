@@ -5,5 +5,6 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   darkMode: 'class', // or 'media' or 'class'
+  plugins: [require("daisyui")],
   presets: [require('./utils/tailwind-preset')],
 };
