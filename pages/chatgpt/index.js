@@ -49,7 +49,7 @@ export default function ChatGPT({
 				</label>
 			</div>
 
-			<button className={classNames("btn w-32 block mt-[-20px] mb-3 text-base",
+			<button className={classNames("btn w-32 block mt-[-20px] mb-3 btn-sm",
 				loading ? 'btn-error' : 'btn-primary',
 			)} onClick={() => {
 				if (loading) {
@@ -69,9 +69,14 @@ export default function ChatGPT({
 				}</button>
 
 
-			<div className="w-full">
+			<div className="w-full text-sm">
 				{ask && (
 					<div className="chat chat-start">
+						<div className="chat-image avatar">
+							<div className="w-10 rounded-full">
+								<img src="https://i.328888.xyz/2023/02/12/cU6wq.jpeg" />
+							</div>
+						</div>
 						<div className="chat-bubble">{ask}</div>
 					</div>
 				)
@@ -80,6 +85,11 @@ export default function ChatGPT({
 				{
 					answer && (
 						<div className="chat chat-end">
+							<div className="chat-image avatar">
+								<div className="w-10 rounded-full">
+									<img src="https://i.328888.xyz/2023/02/12/cUEGd.png" />
+								</div>
+							</div>
 							<div className="chat-bubble">
 								<p
 									className="whitespace-pre-wrap"
