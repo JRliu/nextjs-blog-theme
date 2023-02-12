@@ -105,14 +105,11 @@ export default function ChatGPT({
 				{
 					loading && (
 						<div className="chat chat-end">
-							<div className="chat-bubble">
-								<div className="animate-bounce text-[40px] mt-5">🤥</div>
-							</div>
+							<div className="animate-bounce text-[40px] mt-5">🤥</div>
+							<button className="btn btn-square loading"></button>
 						</div>
 					)
 				}
-
-
 			</div>
 
 			<GradientBackground
