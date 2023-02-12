@@ -82,7 +82,7 @@ export default function ChatGPT({
 						<div className="chat chat-end">
 							<div className="chat-bubble">
 								<p
-									className="whitespace-pre"
+									className="whitespace-pre-wrap"
 									dangerouslySetInnerHTML={{
 										__html: answer.replace('\n\n', '')
 									}}
