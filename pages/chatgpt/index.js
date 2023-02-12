@@ -41,9 +41,15 @@ export default function ChatGPT({
 							loading && 'hidden',
 						)
 					} disabled={loading} placeholder={ask} name="ask"></textarea>
+				<label className="label">
+					<span className="label-text-alt"></span>
+					<span className="label-text-alt" onClick={() => {
+						formRef.current.value = ''
+					}}>清除输入</span>
+				</label>
 			</div>
 
-			<button className={classNames("btn w-32 block my-3 text-base",
+			<button className={classNames("btn w-32 block mt-[-20px] mb-3 text-base",
 				loading ? 'btn-error' : 'btn-primary',
 			)} onClick={() => {
 				if (loading) {
